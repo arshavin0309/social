@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .hero {
+      padding: 15px;
+      padding-top: 58px;
+      padding-bottom: 5px;
+      background-color: #FFF6ED;
+    }
+
+    .hero__title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 46px;
+    }
+
+    .container {
+      max-width: 1440px;
+    }
+
+    .hero__headline {
+      margin-top: 17px;
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 41px;
+    }
+
+    .hero__discription{
+      margin-top: 7px;
+      max-width: 375px;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .social {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+
+    .social__list{
+      width: 100%;
+    }
+
+    .social__title {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-size: 44px;
+    }
+
+    .social__discription {
+      margin-top: 15px;
+      font-size: 17px;
+      line-height: 27px;
+    }
+
+    .icon {
+      padding-top: 53px;
+      padding-left: 102px;
+      background: url('img/Ellipse 2.svg') no-repeat;
+      background-size: contain;
+    }
+
+    @media (max-width: 1270px) {
+      .svg {
+        max-width: 100%;
+      }
+
+      .list {
+        flex-direction: column;
+      }
+
+      .hero__item {
+        text-align: center;
+      }
+
+      .hero__discription {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="container">
+      <h2 class="hero__title">Как это работает?</h2>
+      <ul class="hero__list list">
+        <li class="hero__item">
+          <svg class="svg" width="375" height="288"> <use xlink:href="img/1.svg#1"></use></svg>
+          <h3 class="hero__headline">Утренний кофе</h3>
+          <p class="hero__discription">Кофеин воздействует на центральную нервную систему как природный “будильник”. Поэтому мы быстрее просыпаемся.</p>
+        </li>
+        <li class="hero__item">
+          <svg class="svg" width="375" height="288"> <use xlink:href="img/2.svg#2"></use></svg>
+          <h3 class="hero__headline">Час медитации</h3>
+          <p class="hero__discription">После практик оба полушария мозга начинают работать сбалансированно — это привносит порядок в вашу жизнь.</p>
+        </li>
+        <li class="hero__item">
+          <svg class="svg" width="375" height="288"> <use xlink:href="img/3.svg#3"></use></svg>
+          <h3 class="hero__headline">Вперёд к свершениям!</h3>
+          <p class="hero__discription">Ресурсы каждого человека ограничены, поэтому нам необходимо беречь себя и вовремя останавливаться.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="social">
+    <div class="container">
+      <ul class="social__list list">
+        <li class="social__list">
+          <h1 class="social__title">Интеграция со сторонними сервисами</h1>
+          <p class="social__discription">
+            Поможет всегда оставаться в курсе всех событий, быть максимально эффективным на протяжении всего рабочего дня, контролировать свои задачи и не опоздать на запланированные встречи.
+          </p>
+        </li>
+        <li class="social__list icon">
+          <svg class="svg" width="550" height="170">
+            <use xlink:href="img/group 5.svg#social"></use>
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
